@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Real-Time Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login-screen">
+    <h2>Enter your name</h2>
+    <input type="text" id="username" placeholder="Your name" />
+    <button id="joinBtn">Join</button>
+  </div>
+
+  <div id="editor-screen" style="display:none;">
+    <h3>Real-Time Collaborative Editor</h3>
+    <p>Logged in as: <span id="currentUser"></span></p>
+    <div id="editor" contenteditable="true"></div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
